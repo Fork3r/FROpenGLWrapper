@@ -5,16 +5,16 @@ set(CMAKE_CXX_STANDARD 17)
 
 set(header
         ${header}
-        renderer.h
-        model.h
-        texture.h
+        ${FR_OPENGL_WARPPER_PATH}/renderer.h
+        ${FR_OPENGL_WARPPER_PATH}/model.h
+        ${FR_OPENGL_WARPPER_PATH}/texture.h
         )
 
 set(src
         ${src}
-        renderer.cpp
-        model.cpp
-        texture.cpp
+        ${FR_OPENGL_WARPPER_PATH}/renderer.cpp
+        ${FR_OPENGL_WARPPER_PATH}/model.cpp
+        ${FR_OPENGL_WARPPER_PATH}/texture.cpp
         )
 
-add_executable(FRMath main.cpp ${header} ${src})
+#add_executable(FRMath main.cpp ${header} ${src})
