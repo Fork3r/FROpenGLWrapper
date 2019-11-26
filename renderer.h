@@ -2,8 +2,8 @@
 // Created by rsalogub on 26.11.19.
 //
 
-#ifndef RENDERER_H
-#define RENDERER_H
+#ifndef FR_OPENGL_RENDERER_H
+#define FR_OPENGL_RENDERER_H
 
 #include <set>
 #include "model.h"
@@ -21,4 +21,4 @@ namespace FROpenGLWrapper
         Renderer() = default;
     };
 }
-#endif //RENDERER_H
+#endif //FR_OPENGL_RENDERER_H

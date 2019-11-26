@@ -7,4 +7,8 @@
 namespace FROpenGLWrapper
 {
 
+    Model::Model(const std::string &texturePath, const FRMath::Vector2 &size)
+    {
+
+    }
 }
