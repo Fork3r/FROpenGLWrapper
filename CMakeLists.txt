@@ -8,6 +8,9 @@ set(header
         ${FR_OPENGL_WARPPER_PATH}/renderer.h
         ${FR_OPENGL_WARPPER_PATH}/model.h
         ${FR_OPENGL_WARPPER_PATH}/texture.h
+        ${FR_OPENGL_WARPPER_PATH}/shader.h
+        ${FR_OPENGL_WARPPER_PATH}/modelshader.cpp
+        ${FR_OPENGL_WARPPER_PATH}/vertexarray.h
         ${FR_OPENGL_WARPPER_PATH}/3dparty/stb_image.h
         )
 
@@ -16,6 +19,9 @@ set(src
         ${FR_OPENGL_WARPPER_PATH}/renderer.cpp
         ${FR_OPENGL_WARPPER_PATH}/model.cpp
         ${FR_OPENGL_WARPPER_PATH}/texture.cpp
+        ${FR_OPENGL_WARPPER_PATH}/shader.cpp
+        ${FR_OPENGL_WARPPER_PATH}/modelshader.cpp
+        ${FR_OPENGL_WARPPER_PATH}/vertexarray.cpp
         ${FR_OPENGL_WARPPER_PATH}/3dparty/stb_image.cpp
         )
 

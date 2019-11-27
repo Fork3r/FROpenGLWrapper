@@ -6,6 +6,8 @@
 
 namespace FROpenGLWrapper
 {
+    Renderer* Renderer::instance_ = nullptr;
+
     void Renderer::addModel(Model *renderModel)
     {
         Models_.insert(renderModel);
@@ -17,5 +19,14 @@ namespace FROpenGLWrapper
         if (it != Models_.end()) {
             Models_.erase(it);
         }
+    }
+
+    Renderer *Renderer::getRenderer()
+    {
+        if (instance_ == nullptr)
+        {
+            instance_ = new Renderer();
+        }
+        return instance_;
     }
 }

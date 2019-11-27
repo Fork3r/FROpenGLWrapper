@@ -7,6 +7,7 @@
 
 #include <string>
 #include <FRMath/vector2.h>
+#include <types.h>
 
 namespace FROpenGLWrapper
 {
@@ -15,8 +16,14 @@ namespace FROpenGLWrapper
     public:
         Model& operator=(const Model&) = delete;
         Model(const Model&) = delete;
+        Model(const std::string &texturePath, const FRMath::Vector2<FRMath::pointType> &size);
 
-        Model(const std::string &texturePath, const FRMath::Vector2 &size);
+        void step(FRMath::timeType);
+
+    private:
+        FRMath::Vector2<FRMath::pointType> size_;
+
+
     };
 }
 

@@ -15,6 +15,8 @@ namespace FROpenGLWrapper
         Texture(const std::string &texturePath);
         ~Texture();
 
+    int getUnit() const;
+
     private:
         uint id_ = 0;
         int unit_ = -1;

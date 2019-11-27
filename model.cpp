@@ -7,7 +7,12 @@
 namespace FROpenGLWrapper
 {
 
-    Model::Model(const std::string &texturePath, const FRMath::Vector2 &size)
+    Model::Model(const std::string &texturePath, const FRMath::Vector2<FRMath::pointType> &size)
+    {
+
+    }
+
+    void Model::step(FRMath::timeType)
     {
 
     }

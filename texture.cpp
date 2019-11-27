@@ -5,6 +5,7 @@
 #include "texture.h"
 #include <GL/glew.h>
 #include <iostream>
+#include <cassert>
 #include "3dparty/stb_image.h"
 
 namespace FROpenGLWrapper
@@ -43,6 +44,11 @@ namespace FROpenGLWrapper
     {
         std::cout << __func__;
         glDeleteTextures(1, &id_);
+    }
+
+    int Texture::getUnit() const
+    {
+        assert(unit_ != -1); return unit_ ;
     }
 
 
